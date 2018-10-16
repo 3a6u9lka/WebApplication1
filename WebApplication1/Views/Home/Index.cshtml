@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+
+<div class="jumbotron">
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+
+
+        <button type="submit" name="action" value="Get one">Get one</button>
+        <button type="submit" name="action" value="getReport">Поиск</button>
+    }
+</div>
+
